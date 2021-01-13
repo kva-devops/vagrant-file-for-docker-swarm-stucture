@@ -21,5 +21,8 @@ sudo yum install docker-ce-cli -y
 sudo yum install containerd.io
 
 sudo systemctl start docker
+sudo systemctl enable docker
+
+sudo usermod -aG docker vagrant
 
 sudo docker run hello-world
