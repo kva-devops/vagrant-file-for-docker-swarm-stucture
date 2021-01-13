@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker swarm init \
---advertise-addr private_ip_address_your_network
+--advertise-addr 192.168.50.4
 
 docker node ls
 

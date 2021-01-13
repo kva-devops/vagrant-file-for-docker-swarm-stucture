@@ -13,3 +13,6 @@ scp vagrant@master-host-ip:/home/vagrant/vagrant-file-for-docker-swarm-stucture/
 
 Remember change 
 sudo chmod u+x scriptname.sh
+
+After execute create swarm on master-host, paste this on worker-host
+sudo docker swarm join --token [token] your_private_ip:2377
